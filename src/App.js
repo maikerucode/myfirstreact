@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="https://pbs.twimg.com/media/FAqiMfHUUAIItgl?format=png&name=900x900" className="App-logo" alt="logo" />
         <p>
           Michael Joshua Sarmiento's Spectacular React App
         </p>
