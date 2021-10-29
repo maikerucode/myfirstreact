@@ -1,17 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import Greet from './Greet'; // does not need .js; both are js files
+import Message from './Message';
+import Button from './Button';
+
+/*
+functional/stateless component
+- has no state; most simplest component; made for simple logic and program
+- all in js are objects
+
+class/statefull component
+-
+
+jsx = java script xml/ html object(?)
+
+ */
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://pbs.twimg.com/media/FAqiMfHUUAIItgl?format=png&name=900x900" className="App-logo" alt="logo" />
+        <img src={"https://pbs.twimg.com/media/FC3wflaaIAA5KnT?format=jpg&name=4096x4096"} className="App-logo" alt="logo" />
         <p>
-          Michael Joshua Sarmiento's Spectacular React App Tester
+          Edit <code>src/App.js</code>
         </p>
+        <Greet name="Sir Sir Japeth">
+        <Message/>
+        </Greet>
+        <Greet name="Sir Koby">
+        <Button/>
+        <p>Spectacular React App</p>
+        </Greet>
+        <Greet name="Sir Koby"></Greet>
         <a
           className="App-link"
-          href="https://www.facebook.com/Blue.Yumi.Ao"
+          href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
