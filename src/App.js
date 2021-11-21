@@ -3,6 +3,7 @@ import './App.css';
 import Greet from './Greet'; // does not need .js; both are js files
 import Message from './Message';
 import Button from './Button';
+import Employee from './Employee';
 
 /*
 functional/stateless component
@@ -24,14 +25,15 @@ function App() {
         <p>
           Edit <code>src/App.js</code>
         </p>
+        <Employee/>
         <Greet name="Sir Sir Japeth">
         <Message/>
         </Greet>
-        <Greet name="Sir Koby">
+        <Greet name="Tony Hawk">
         <Button/>
         <p>Spectacular React App</p>
         </Greet>
-        <Greet name="Sir Koby"></Greet>
+        <Greet name="Bugoy Drilon"></Greet>
         <a
           className="App-link"
           href="https://reactjs.org"

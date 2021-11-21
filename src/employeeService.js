@@ -1,4 +1,4 @@
-import httpclient from "../commons/httpclient"
+import httpclient from "./httpclient"
 
 const getEmployees = () => {
     return httpclient.get('/employees')
