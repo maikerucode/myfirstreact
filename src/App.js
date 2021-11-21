@@ -33,7 +33,7 @@ function App() {
         <Button/>
         <p>Spectacular React App</p>
         </Greet>
-        <Greet name="Bugoy Drilon"></Greet>
+        <Greet name="Deploy Bugoy Drilon"></Greet>
         <a
           className="App-link"
           href="https://reactjs.org"
