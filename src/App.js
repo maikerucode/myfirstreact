@@ -4,6 +4,7 @@ import Greet from './Greet'; // does not need .js; both are js files
 import Message from './Message';
 import Button from './Button';
 import Employee from './Employee';
+import hello from './hello';
 
 /*
 functional/stateless component
@@ -25,6 +26,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code>
         </p>
+        <p>{hello()}</p>
         <Employee/>
         <Greet name="Sir Sir Japeth">
         <Message/>

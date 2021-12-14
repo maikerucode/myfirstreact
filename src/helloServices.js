@@ -1,4 +1,4 @@
-import httpclient from "../commons/httpclient";
+import httpclient from "./httpclient";
 
 const getHello = () => {
     return httpclient.get('/hello');
