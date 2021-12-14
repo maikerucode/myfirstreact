@@ -1,10 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import Greet from './Greet'; // does not need .js; both are js files
-import Message from './Message';
-import Button from './Button';
-import Employee from './Employee';
-import hello from './hello';
+import NavBar from './NavBar';
+import Home from './Home';
+import Router from './Router';
+import AddEmployee from './AddEmployee';
+
 
 /*
 functional/stateless component
@@ -21,30 +19,8 @@ jsx = java script xml/ html object(?)
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={"https://pbs.twimg.com/media/FC3wflaaIAA5KnT?format=jpg&name=4096x4096"} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code>
-        </p>
-        <p>{hello()}</p>
-        <Employee/>
-        <Greet name="Sir Sir Japeth">
-        <Message/>
-        </Greet>
-        <Greet name="Tony Hawk">
-        <Button/>
-        <p>Spectacular React App</p>
-        </Greet>
-        <Greet name="Deploy Bugoy Drilon"></Greet>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Router/>
     </div>
   );
 }

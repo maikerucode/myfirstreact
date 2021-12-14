@@ -14,21 +14,24 @@ const Employee = () => {
             )
             .catch(
             () => {
-                console.log("goods na goods")
+                console.log("goods na goods")   
                 }
             )
         }
     )
     return(
-    <div>
+    <div className="container">
         <h3>List of Employees</h3>
         <div>
-            <table border = "1">
-                <tr>
+            <table className="table table-hover table-light table-striped">
+                <thead>
+                <tr className="table-danger">
                     <td>Name</td>
                     <td>Department</td>
                     <td>Location</td>
                 </tr>
+                </thead>
+                <tbody>
                     {
                         employees.map(
                             employee => (
@@ -40,6 +43,7 @@ const Employee = () => {
                             )
                         )
                     }
+                    </tbody>
             </table>
         </div>
     </div>
