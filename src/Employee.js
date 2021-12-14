@@ -63,7 +63,7 @@ const Employee = () => {
                                     <td>{employee.location}</td>
                                     <td>
                                         <div>
-                                            <Link className="btn btn-primary" to={`/edit/${employee.employeeid}`}>Update</Link>
+                                            <Link className="btn btn-primary" to={`/myfirstreact/edit/${employee.employeeid}`}>Update</Link>
                                             <button className="btn btn-danger" onClick={() => deleteEmployee(employee.employeeid)}>Delete</button>
                                         </div>
                                     </td>

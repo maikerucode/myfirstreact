@@ -20,12 +20,12 @@ const AddEmployee = () => {
         .then(
             response => (
                 console.log("updated employee", response.data),
-                navigate("/employees")
+                navigate("/myfirstreact/employees")
             )
         )
         .catch(
             error => (
-                console.error("something went wrong!")
+                console.error("something went wrong!", error)
             )
         )
         }
@@ -36,7 +36,7 @@ const AddEmployee = () => {
         .then(
             response => (
                 console.log("added new employee", response.data),
-                navigate("/employees")
+                navigate("/myfirstreact/employees")
             )
         )
         .catch(
