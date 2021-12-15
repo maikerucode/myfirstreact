@@ -10,9 +10,55 @@ const AddEmployee = () => {
     const [department, setDepartment] = useState("");
     const navigate = useNavigate();
     const {employeeid} = useParams();
+    const [error, setError] = useState("");
 
     const saveEmployee = (e) => {
         e.preventDefault();
+        if(name && location && department){
+            setError("");
+    
+            if(employeeid){
+                //update
+                const employee = {employeeid, name, location, department};
+                employeeService.putEmployee(employee) //promise
+    
+                .then(
+                    response =>{
+                        console.log("updated employee! Congrats", response.data)
+                        navigate("/myfirstreact/employees");
+                    }
+                )
+                .catch(
+                    error => {
+                        console.error("big oof");
+                    }
+                )
+            }
+    
+            else{
+                //combine the 3 data
+                //add employee
+                const employee = {name, location, department};
+                employeeService.postEmployee(employee) //promise
+    
+                //for a promise, there is .then() and .catch()
+                .then(
+                    response =>{
+                        console.log("added new employee! Congrats", response.data)
+                        navigate("/myfirstreact/employees");
+                    }
+                )
+                .catch(
+                    error => {
+                        console.error("big oof");
+                    }
+                )
+            }
+        }
+        else{
+            console.error("Oops! Employee cannot be placed. Please fill each entry...")
+            setError("Oops! Employee cannot be placed. Please fill each entry...")
+        }
 
         if(employeeid) {
             const employee =  {employeeid,  name, location, department};
