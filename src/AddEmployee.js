@@ -59,40 +59,7 @@ const AddEmployee = () => {
             console.error("Oops! Employee cannot be placed. Please fill each entry...")
             setError("Oops! Employee cannot be placed. Please fill each entry...")
         }
-
-        if(employeeid) {
-            const employee =  {employeeid,  name, location, department};
-        employeeService.putEmployee(employee)
-        .then(
-            response => (
-                console.log("updated employee", response.data),
-                navigate("/myfirstreact/employees")
-            )
-        )
-        .catch(
-            error => (
-                console.error("something went wrong!", error)
-            )
-        )
-        }
-    
-        else {
-            const employee =  {name, location, department};
-        employeeService.postEmployee(employee)
-        .then(
-            response => (
-                console.log("added new employee", response.data),
-                navigate("/myfirstreact/employees")
-            )
-        )
-        .catch(
-            error => (
-                console.error("something went wrong!")
-            )
-        )
     }
-        
-}
 
     useEffect(
         () => {
