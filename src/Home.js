@@ -25,7 +25,7 @@ function Home() {
       <header className="App-header">
         <img src={"https://pbs.twimg.com/media/FC3wflaaIAA5KnT?format=jpg&name=4096x4096"} className="App-logo" alt="logo" />
 
-        <p>Spectacular React App</p>
+        <p>Happy Anniversary, Mahal!</p>
 
       </header>
     </div>
