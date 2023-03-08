@@ -24,26 +24,9 @@ function Home() {
     <div className="Home">
       <header className="App-header">
         <img src={"https://pbs.twimg.com/media/FC3wflaaIAA5KnT?format=jpg&name=4096x4096"} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code>
-        </p>
-        <p>{hello()}</p>
-        <Greet name="Sir Sir Japeth">
-        <Message/>
-        </Greet>
-        <Greet name="Tony Hawk">
-        <Button/>
+
         <p>Spectacular React App</p>
-        </Greet>
-        <Greet name="Deploy Bugoy Drilon"></Greet>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
